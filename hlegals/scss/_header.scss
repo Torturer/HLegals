@@ -1,0 +1,98 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    margin: 37px 0;
+    &-nav {
+        .nav-item {
+            .nav-link {
+                color: white;
+            }
+        }
+    }
+    &-toggler {
+        border: 0;
+
+        &-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        @media (max-width: 992px) {
+            order: 3;
+        }
+    }
+
+    &-brand {
+        order: 1;
+
+        @media (max-width: 992px) {
+            order: 2;
+        }
+    }
+
+    &-collapse {
+        order: 3;
+        width: 80%;
+        margin-top: -40px;
+
+        @media (max-width: 992px) {
+            margin-top: 0;
+        }
+    }
+
+    &-top {
+        order: 2;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: flex-end;
+
+        @media (max-width: 992px) {
+            order: 1;
+            width: 100%;
+            justify-content: space-between;
+
+            &-adress, &-social {
+                display: none;
+            }
+        }
+
+        &-language {
+            display: flex;
+
+            &-item {
+                color: white;
+                padding: 4px 6px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 1.17;
+                text-align: center;
+                letter-spacing: 1px;
+                text-decoration: none;
+
+                &.active {
+                    background-color: $rose-color;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        &-adress {
+            color: white;
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+
+        &-tel {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
