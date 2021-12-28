@@ -137,7 +137,7 @@
         &::before {
             content: "";
             @include style-bullet-texture();
-            right: 34px;
+            right: 32px;
             top: 50%;            
         }
         &::after {
