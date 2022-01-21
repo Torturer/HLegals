@@ -1,0 +1,238 @@
+.review-sect {
+    margin: 80px 0;
+}
+
+.review-row {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.address {
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+    border-top: 4px solid #E6E6F0;
+    border-bottom: 4px solid #E6E6F0;
+}
+
+.contacts a {
+    text-decoration: none;
+}
+
+.info-tel {
+    font-size: 21px;
+    line-height: 30px;
+    color: #46466E;
+}
+
+.info-contact {
+    font-size: 21px;
+    line-height: 30px;
+    color: $blue-color;
+}
+
+.about-facebook {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-fac-logo {
+    width: 38px;
+    height: 38px;
+}
+
+.about-us-text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue-color;
+    margin: 0;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightgrey-color;
+    border-radius: 12px;
+}
+
+.heading-form {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    color: transparent;
+    background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+}
+
+.subheading-form {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $grey-color;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.name-form-review,
+.message-form-review,
+.phone-form-review,
+.mail-form-review {
+    background: #FFFFFF;
+    width: 490px;
+    height: 50px;
+    margin: 0px 20px 20px 20px;
+}
+
+.message-form-review {
+    height: 180px;
+}
+
+.name-form,
+.message-form,
+.phone-form,
+.mail-form {
+    font-size: 18px;
+    line-height: 26px;
+    color: $grey-color;  
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.btn-form-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-form {
+    background-color: $blue-color;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;
+    width: 250px;
+    height: 50px;
+}
+
+.contact-map {
+    width: 100%;
+    height: 600px;
+}
+
+.info-sect {
+    background-color: $lightgrey-color;
+    border-top: none;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.bot-address {
+    font-size: 16px;
+    margin-right: 30px;
+    color: $darkgrey-color;
+}
+
+.bot-map {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue-color;
+    text-decoration: none;
+}
+
+.info-bot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bot-tel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #46466E;
+    text-decoration: none;
+}
+
+.bot-contact {
+    font-size: 16px;
+    font-weight: 700;
+    color: $blue-color;
+    text-decoration: none;
+}
+
+.text-trademark {
+    font-size: 16px;
+    color: $grey-color;
+    text-align: end;
+}
+
+.bot-map:before,
+.bot-contact:before,
+.bot-tel:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #E6E6F0;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    cursor: default;
+    color: $grey-color;
+}
+
+.bot-tel:before {
+    margin-right: 1px;
+}
+
+@media(max-width: 992px){
+    .review-row{
+        flex-direction: column;
+    }
+    .name-form-review,
+    .message-form-review,
+    .phone-form-review,
+    .mail-form-review {
+        background: #FFFFFF;
+        width: 90%;
+        height: 50px;
+    }
+    .message-form-review {
+        height: 180px;
+    }
+}
+
+@media(max-width: 576px) {
+    .heading-form {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .text-trademark{
+        text-align: center;
+    }
+    .bot-map:before, .bot-contact:before, .bot-tel:before {
+        display: none;
+    }
+}

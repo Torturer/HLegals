@@ -1,0 +1,351 @@
+.services-sect {
+    margin: 80px 0 100px 0;
+    
+}
+
+.services-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.services-col{
+    max-width: 640px;
+}
+
+.experience-col {
+    max-width: 410px;
+    border-left: 4px solid #E6E6F0;
+    height: 100%;
+    
+}
+
+.second-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: transparent;
+    background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.text {
+    font-size: 21px;
+    line-height: 30px;
+    color: $black-color;
+    margin-bottom: 30px;
+}
+
+.subtext {
+    font-size: 21px;
+    line-height: 30px;
+    color: $black-color;
+}
+
+.third-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: transparent;
+    background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.third-year::before{
+    content: "";
+    background-image: url(../img/experience-flag.svg);
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.third-clients:before{
+    content: "";
+    background-image: url(../img/experience-clients.svg);
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.third-hour:before{
+    content: "";
+    background-image: url(../img/experience-pro-bono.svg);
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-experience {
+    font-size: 18px;
+    padding-left: 20px;
+    color: $darkgrey-color;
+    margin-bottom: 40px;
+}
+
+.subtext-experience {
+    font-size: 18px;
+    padding-left: 20px;
+    color: $darkgrey-color;
+}
+
+
+.team-sect {
+    background-image: url(../img/team-photo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.heading-team {
+    margin:0;
+    padding: 162px 0;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+
+.quality-sect {
+    margin-bottom: 90px;
+}
+
+.quality-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.history-col {
+    max-width: 640px;
+}
+
+.quality-col {
+    max-width: 410px;
+}
+
+.logo-slider-sect {
+    background-color: $lightgrey-color;
+    padding: 30px 0 75px;
+
+    .fourth-heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 30px 0 30px 0;
+    }
+
+    .swiper-slide {
+        background-color: white;
+        text-align: center;
+        padding: 25px;
+        border-radius: 12px;
+
+        img {
+            max-width: 100%;
+            
+            @media(max-width:992px){
+                max-height: 35px;
+            }
+        }
+    }
+
+    .swiper-pagination-bullet, .swiper-pagination-bullet-active {
+        width: 16px;
+        height: 16px;
+        background-color: $blue-color;
+    }
+
+    .about-logo-container {
+        position: relative;
+
+        .swiper-pagination {
+            bottom: -40px;
+        }
+    }
+}
+
+.info-sect {
+    background-color: $lightgrey-color;
+    border-top: 4px solid #E6E6F0;
+    width: 100%;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.bot-address {
+    font-size: 16px;
+    margin-right: 30px;
+    color: $darkgrey-color;
+}
+
+.bot-map {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue-color;
+    text-decoration: none;
+}
+
+.info-bot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bot-tel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #46466E;
+    text-decoration: none;
+}
+
+.bot-contact {
+    font-size: 16px;
+    font-weight: 700;
+    color: $blue-color;
+    text-decoration: none;
+}
+
+.text-trademark {
+    font-size: 16px;
+    color: $grey-color;
+    text-align: end;
+}
+
+.bot-map:before,
+.bot-contact:before,
+.bot-tel:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #E6E6F0;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    cursor: default;
+    color: $grey-color;
+}
+
+.bot-tel:before {
+    margin-right: 1px;
+}
+
+@media (max-width:992px){
+    .heading-team{
+        font-size: 50px;
+        letter-spacing: 45px;
+    }
+    .second-heading {
+        line-height: 45px;
+    }
+}
+
+@media(max-width: 576px) {
+    .services-sect {
+        margin: 20px 0 35px 0;
+    }
+    .services-row {
+        flex-direction: column;
+    }
+    .experience-col{
+    max-width: 334px;
+    border-top: 4px solid #E6E6F0;
+    border-left: none;
+    }
+    .third-heading,
+    .text-experience,
+    .subtext-experience {
+        padding-left: 0;
+    }
+    .text-experience{
+        margin-bottom: 20px;
+    }
+    .third-year {
+        margin-top: 15px;
+    }
+    .second-heading {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .text, .subtext {
+        font-size: 18px
+    }
+    .team-sect{
+        margin-bottom: 20px;
+    }
+    .heading-team{
+        font-size: 36px;
+        letter-spacing: 20px;
+    }
+    .quality-row{
+        flex-direction: column;
+    }
+    .info-row {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .bot-address {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .bot-map {
+        text-align: center;
+        margin: 0;
+    }
+    .info-bot{
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .text-trademark {
+        text-align: center;
+    }
+    .bot-map:before,
+    .bot-contact:before,
+    .bot-tel:before {
+    display: none;
+    }
+    .quality-sect {
+        margin-bottom: 40px;
+    }
+    .quality-row {
+        gap: 0;
+    }
+    .text {
+        margin-bottom: 20px;
+    }
+}
+
